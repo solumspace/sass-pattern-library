@@ -1,0 +1,32 @@
+{
+	"colors": [
+		{
+			"class": "ab-charcoal",
+			"hex": "#383943"
+		},
+		{
+			"class": "ab-sky-blue",
+			"hex": "#e4f3f8"
+		},
+		{
+			"class": "ab-ocean-blue",
+			"hex": "#82c2df"
+		},
+		{
+			"class": "ab-yellow",
+			"hex": "#f9d032"
+		},
+		{
+			"class": "ab-red-orange",
+			"hex": "#ff4713"
+		},
+		{
+			"class": "ab-dark-blue",
+			"hex": "#005984"
+		},
+		{
+			"class": "ab-light-gray",
+			"hex": "#e9e9e9"
+		}
+	]
+}

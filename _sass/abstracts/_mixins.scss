@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+
+@mixin icon-colors($fallback: black) {
+ fill: $fallback;
+ @content;
+}
+
+@mixin color ($color){
+  color: $color;
+  &--bg {
+    background: $color;
+  }
+}

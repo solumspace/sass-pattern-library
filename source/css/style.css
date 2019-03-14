@@ -1,0 +1,158 @@
+/*------------------------------------*\
+   #ABSTRACTS
+\*------------------------------------*/
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
+/**
+ * CONTENTS
+ *
+ * COLORS
+ * Brand Colors...............Globally-available variables and config
+ * Neutral Colors.............Grayscale colors, including white and black
+ *
+ * TYPOGRAPHY
+ * Font Families..............The fonts used in the design system
+ * Sizing.....................Font sizing
+ *
+ * LAYOUT
+ * Max-widths.................Maximum layout container width
+ *
+
+ * SPACING
+ * Spacing defaults...........Spacing between elements
+ *
+ * BORDERS
+ * Border Width...............Border thicknesses
+ * Border Radius..............Border radius definitions
+ *
+ * ANIMATION
+ * Animation Speed............Transition/animation speed variables
+ * Animation easing...........Easing variables
+ *
+ * BREAKPOINTS
+ * Breakpoints................Global breakpoint definitions
+ */
+/*------------------------------------*\
+     #COLORS
+ \*------------------------------------*/
+/**
+ * Brand Colors
+ * 1) Main identifiable colors involved in creating the UI
+ *    Feel free to add your brand's color palette here.
+ */
+/**
+ * Neutral Colors
+ * 1) Neutral colors are grayscale values used throughout the application
+ */
+/**
+ * Utility Colors
+ * 1) Utility colors are colors used to provide feedback, such as alert messages,
+ * form validation, etc.
+ */
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+/**
+ * Font Family
+ */
+/**
+ * Font Sizing
+ */
+/*------------------------------------*\
+    #LAYOUT
+\*------------------------------------*/
+/**
+ * Max Width
+ */
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+/**
+ * Spacing and offsets
+ * 1) Used to space grids and body padding
+ * 2) The width of the bullets, used to align list content.
+ */
+/* 1 */
+/* 2 */
+/*------------------------------------*\
+    #BORDERS
+\*------------------------------------*/
+/**
+ * Border variables
+ */
+/*------------------------------------*\
+    #ANIMATION
+\*------------------------------------*/
+/**
+ * Transition Speed
+ */
+/*------------------------------------*\
+    #BREAKPOINTS
+\*------------------------------------*/
+/**
+ * Breakpoints used in media queries
+ */
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+/*------------------------------------*\
+   #BASE
+\*------------------------------------*/
+.ab-charcoal {
+  color: #383943;
+}
+
+.ab-charcoal--bg {
+  background: #383943;
+}
+
+.ab-sky-blue {
+  color: #e4f3f8;
+}
+
+.ab-sky-blue--bg {
+  background: #e4f3f8;
+}
+
+.ab-ocean-blue {
+  color: #82c2df;
+}
+
+.ab-ocean-blue--bg {
+  background: #82c2df;
+}
+
+.ab-yellow {
+  color: #f9d032;
+}
+
+.ab-yellow--bg {
+  background: #f9d032;
+}
+
+.ab-red-orange {
+  color: #ff4713;
+}
+
+.ab-red-orange--bg {
+  background: #ff4713;
+}
+
+.ab-dark-blue {
+  color: #005984;
+}
+
+.ab-dark-blue--bg {
+  background: #005984;
+}
+
+.ab-light-gray {
+  color: #e9e9e9;
+}
+
+.ab-light-gray--bg {
+  background: #e9e9e9;
+}
+
+/*# sourceMappingURL=style.css.map */

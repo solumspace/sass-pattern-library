@@ -1,0 +1,32 @@
+{
+  "name": "pattern-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pl:build": "patternlab build --config ./patternlab-config.json",
+    "pl:help": "patternlab --help",
+    "pl:install": "patternlab install --config ./patternlab-config.json",
+    "pl:serve": "patternlab serve --config ./patternlab-config.json",
+    "pl:version": "patternlab --version"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pattern-lab/cli": "^0.0.1-beta.2",
+    "@pattern-lab/core": "^3.0.0-beta.2",
+    "@pattern-lab/engine-mustache": "^2.0.0-beta.1",
+    "@pattern-lab/starterkit-mustache-base": "^3.0.3",
+    "@pattern-lab/uikit-workshop": "^1.0.0-beta.1",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-sass": "^3.0.2",
+    "load-grunt-tasks": "^4.0.0",
+    "node-sass": "^4.11.0",
+    "time-grunt": "^2.0.0"
+  }
+}
