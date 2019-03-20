@@ -1,0 +1,79 @@
+{
+	"logos": [
+		{
+			"class": "ab-logo-tag-wt-r",
+			"src": "logo-abrigo-with-tagline-white-registered.png",
+			"altsrc": "logo-abrigo-with-tagline-white-registered.jpg"
+		},
+		{
+			"class": "ab-logo-tag-wt-t",
+			"src": "logo-abrigo-with-tagline-white-trademarked.png",
+			"altsrc": "logo-abrigo-with-tagline-white-trademarked.jpg"
+		},
+		{
+			"class": "ab-logo-bk-t",
+			"src": "logo-abrigo-without-tagline-black-trademarked.png",
+			"altsrc": "logo-abrigo-without-tagline-black-trademarked.jpg"
+		},
+		{
+			"class": "ab-logo-t",
+			"src": "logo-abrigo-without-tagline-color-trademarked.png",
+			"altsrc": "logo-abrigo-without-tagline-color-trademarked.jpg"
+		},
+		{
+			"class": "ab-logo-wt-r",
+			"src": "logo-abrigo-without-tagline-white-registered.png",
+			"altsrc": "logo-abrigo-without-tagline-white-registered.jpg"
+		},
+		{
+			"class": "ab-logo-wt-t",
+			"src": "logo-abrigo-without-tagline-white-trademarked.png",
+			"altsrc": "logo-abrigo-without-tagline-white-trademarked.jpg"
+		},
+		{
+			"class": "ab-favicon",
+			"src": "favicon.png",
+			"altsrc": "favicon.jpg"
+		},
+		{
+			"class": "ab-icon-url",
+			"src": "icon-abrigo-links-and-url.png",
+			"altsrc": "icon-abrigo-links-and-url.jpg"
+		},
+		{
+			"class": "ab-icon",
+			"src": "icon-abrigo-links.png",
+			"altsrc": "icon-abrigo-links.jpg"
+		},
+		{
+			"class": "ab-logo-tag-bk-r",
+			"src": "logo-abrigo-with-tagline-black-registered.png",
+			"altsrc": "logo-abrigo-with-tagline-black-registered.jpg"
+		},
+		{
+			"class": "ab-logo-tag-bk-t",
+			"src": "logo-abrigo-with-tagline-black-trademark.png",
+			"altsrc": "logo-abrigo-with-tagline-black-trademark.jpg"
+		},
+		{
+			"class": "ab-logo-tag-r",
+			"src": "logo-abrigo-with-tagline-color-registered.png",
+			"altsrc": "logo-abrigo-with-tagline-color-registered.jpg"
+		},
+		{
+			"class": "ab-logo-tag-t",
+			"src": "logo-abrigo-with-tagline-color-trademark.png",
+			"altsrc": "logo-abrigo-with-tagline-color-trademark.jpg"
+		},
+		{
+			"class": "ab-logo-bk-r",
+			"altsrc": "logo-abrigo-without-tagline-black-registered.jpg",
+			"src": "logo-abrigo-without-tagline-black-registered.png"
+		},
+		{
+			"class": "ab-logo-r",
+			"altsrc": "logo-abrigo-without-tagline-color-registered.jpg",
+			"src": "logo-abrigo-without-tagline-color-registered.png"
+		}
+	]
+}
