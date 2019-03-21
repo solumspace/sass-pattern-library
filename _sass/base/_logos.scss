@@ -1,57 +1,30 @@
-.ab-logo {
-  display: block;
-  max-height: 50px;
+%wt-logo {
+    .sg-swatch & {
+      background: $brand-light-gray;
+    }
 }
 
-.ab-logo-tag-wt-r {
-  .sg-swatch & {
-    background: #ddd;
-  }
-}
-.ab-logo-tag-wt-t {
-  .sg-swatch & {
-    background: #ddd;
-  }
-}
-.ab-logo-bk-t {
-
-}
-.ab-logo-t {
-
-}
-.ab-logo-wt-r {
-  .sg-swatch & {
-    background: #ddd;
-  }
-}
-.ab-logo-wt-t {
-  .sg-swatch & {
-    background: #ddd;
-  }
-}
-.ab-favicon {
-
-}
-.ab-icon-url {
-
-}
-.ab-icon  {
-
-}
-.ab-logo-tag-bk-r {
-
-}
-.ab-logo-tag-bk-t {
-
-}
-.ab-logo-tag-r {
-
-}
-.ab-logo-tag-t {
-
-}
-.ab-logo-bk-r {
-
-}
-.ab-logo-r {
+.a-logo {
+    display: block;
+    max-height: 50px;
+    &--tag-wt-reg {
+      @extend %wt-logo;
+    }
+    &--tag-wt-trade {
+      @extend %wt-logo;
+    }
+    &--wt-reg {
+      @extend %wt-logo;
+    }
+    &--wt-trade {
+      @extend %wt-logo;
+    }
+    &--tag-bk-reg {}
+    &--tag-bk-trade {}
+    &--tag-reg {}
+    &--tag-trade {}
+    &--bk-reg {}
+    &--bk-trade {}
+    &--reg {}
+    &--trade {}
 }

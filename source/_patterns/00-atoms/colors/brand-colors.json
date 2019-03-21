@@ -1,31 +1,31 @@
 {
 	"colors": [
 		{
-			"class": "ab-charcoal",
+			"class": "a-color--charcoal",
 			"hex": "#383943"
 		},
 		{
-			"class": "ab-sky-blue",
+			"class": "a-color--sky-blue",
 			"hex": "#e4f3f8"
 		},
 		{
-			"class": "ab-ocean-blue",
+			"class": "a-color--ocean-blue",
 			"hex": "#82c2df"
 		},
 		{
-			"class": "ab-yellow",
+			"class": "a-color--yellow",
 			"hex": "#f9d032"
 		},
 		{
-			"class": "ab-red-orange",
+			"class": "a-color--red-orange",
 			"hex": "#ff4713"
 		},
 		{
-			"class": "ab-dark-blue",
+			"class": "a-color--dark-blue",
 			"hex": "#005984"
 		},
 		{
-			"class": "ab-light-gray",
+			"class": "a-color--light-gray",
 			"hex": "#e9e9e9"
 		}
 	]

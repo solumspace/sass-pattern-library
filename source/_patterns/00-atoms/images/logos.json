@@ -1,77 +1,77 @@
 {
 	"logos": [
 		{
-			"class": "ab-logo-tag-wt-r",
+			"class": "a-logo--tag-wt-reg",
 			"src": "logo-abrigo-with-tagline-white-registered.png",
 			"altsrc": "logo-abrigo-with-tagline-white-registered.jpg"
 		},
 		{
-			"class": "ab-logo-tag-wt-t",
+			"class": "a-logo--tag-wt-trade",
 			"src": "logo-abrigo-with-tagline-white-trademarked.png",
 			"altsrc": "logo-abrigo-with-tagline-white-trademarked.jpg"
 		},
 		{
-			"class": "ab-logo-bk-t",
+			"class": "a-logo--bk-trade",
 			"src": "logo-abrigo-without-tagline-black-trademarked.png",
 			"altsrc": "logo-abrigo-without-tagline-black-trademarked.jpg"
 		},
 		{
-			"class": "ab-logo-t",
+			"class": "a-logo--trade",
 			"src": "logo-abrigo-without-tagline-color-trademarked.png",
 			"altsrc": "logo-abrigo-without-tagline-color-trademarked.jpg"
 		},
 		{
-			"class": "ab-logo-wt-r",
+			"class": "a-logo--wt-reg",
 			"src": "logo-abrigo-without-tagline-white-registered.png",
 			"altsrc": "logo-abrigo-without-tagline-white-registered.jpg"
 		},
 		{
-			"class": "ab-logo-wt-t",
+			"class": "a-logo--wt-trade",
 			"src": "logo-abrigo-without-tagline-white-trademarked.png",
 			"altsrc": "logo-abrigo-without-tagline-white-trademarked.jpg"
 		},
 		{
-			"class": "ab-favicon",
+			"class": "a-favicon",
 			"src": "favicon.png",
 			"altsrc": "favicon.jpg"
 		},
 		{
-			"class": "ab-icon-url",
+			"class": "a-icon--brand-tag",
 			"src": "icon-abrigo-links-and-url.png",
 			"altsrc": "icon-abrigo-links-and-url.jpg"
 		},
 		{
-			"class": "ab-icon",
+			"class": "a-icon--brand",
 			"src": "icon-abrigo-links.png",
 			"altsrc": "icon-abrigo-links.jpg"
 		},
 		{
-			"class": "ab-logo-tag-bk-r",
+			"class": "a-logo--tag-bk-reg",
 			"src": "logo-abrigo-with-tagline-black-registered.png",
 			"altsrc": "logo-abrigo-with-tagline-black-registered.jpg"
 		},
 		{
-			"class": "ab-logo-tag-bk-t",
+			"class": "a-logo--tag-bk-trade",
 			"src": "logo-abrigo-with-tagline-black-trademark.png",
 			"altsrc": "logo-abrigo-with-tagline-black-trademark.jpg"
 		},
 		{
-			"class": "ab-logo-tag-r",
+			"class": "a-logo--tag-reg",
 			"src": "logo-abrigo-with-tagline-color-registered.png",
 			"altsrc": "logo-abrigo-with-tagline-color-registered.jpg"
 		},
 		{
-			"class": "ab-logo-tag-t",
+			"class": "a-logo--tag-trade",
 			"src": "logo-abrigo-with-tagline-color-trademark.png",
 			"altsrc": "logo-abrigo-with-tagline-color-trademark.jpg"
 		},
 		{
-			"class": "ab-logo-bk-r",
+			"class": "a-logo--bk-reg",
 			"altsrc": "logo-abrigo-without-tagline-black-registered.jpg",
 			"src": "logo-abrigo-without-tagline-black-registered.png"
 		},
 		{
-			"class": "ab-logo-r",
+			"class": "a-logo--reg",
 			"altsrc": "logo-abrigo-without-tagline-color-registered.jpg",
 			"src": "logo-abrigo-without-tagline-color-registered.png"
 		}

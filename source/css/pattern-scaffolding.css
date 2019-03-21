@@ -104,81 +104,69 @@
 /*------------------------------------*\
    #BASE
 \*------------------------------------*/
-.ab-charcoal {
+.a-color--charcoal {
   color: #383943;
 }
 
-.ab-charcoal--bg {
+.a-color--charcoal--bg {
   background: #383943;
 }
 
-.ab-sky-blue {
+.a-color--sky-blue {
   color: #e4f3f8;
 }
 
-.ab-sky-blue--bg {
+.a-color--sky-blue--bg {
   background: #e4f3f8;
 }
 
-.ab-ocean-blue {
+.a-color--ocean-blue {
   color: #82c2df;
 }
 
-.ab-ocean-blue--bg {
+.a-color--ocean-blue--bg {
   background: #82c2df;
 }
 
-.ab-yellow {
+.a-color--yellow {
   color: #f9d032;
 }
 
-.ab-yellow--bg {
+.a-color--yellow--bg {
   background: #f9d032;
 }
 
-.ab-red-orange {
+.a-color--red-orange {
   color: #ff4713;
 }
 
-.ab-red-orange--bg {
+.a-color--red-orange--bg {
   background: #ff4713;
 }
 
-.ab-dark-blue {
+.a-color--dark-blue {
   color: #005984;
 }
 
-.ab-dark-blue--bg {
+.a-color--dark-blue--bg {
   background: #005984;
 }
 
-.ab-light-gray {
+.a-color--light-gray {
   color: #e9e9e9;
 }
 
-.ab-light-gray--bg {
+.a-color--light-gray--bg {
   background: #e9e9e9;
 }
 
-.ab-logo {
+.sg-swatch .a-logo--tag-wt-reg, .sg-swatch .a-logo--tag-wt-trade, .sg-swatch .a-logo--wt-reg, .sg-swatch .a-logo--wt-trade {
+  background: #e9e9e9;
+}
+
+.a-logo {
   display: block;
   max-height: 50px;
-}
-
-.sg-swatch .ab-logo-tag-wt-r {
-  background: #ddd;
-}
-
-.sg-swatch .ab-logo-tag-wt-t {
-  background: #ddd;
-}
-
-.sg-swatch .ab-logo-wt-r {
-  background: #ddd;
-}
-
-.sg-swatch .ab-logo-wt-t {
-  background: #ddd;
 }
 
 #sg-patterns {

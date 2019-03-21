@@ -1,21 +1,23 @@
-.ab-charcoal {
-  @include color($brand-charcoal);
-}
-.ab-sky-blue {
-  @include color($brand-sky-blue);
-}
-.ab-ocean-blue {
-  @include color($brand-ocean-blue);
-}
-.ab-yellow {
-  @include color($brand-yellow);
-}
-.ab-red-orange {
-  @include color($brand-red-orange);
-}
-.ab-dark-blue {
-  @include color($brand-dark-blue);
-}
-.ab-light-gray {
-  @include color($brand-light-gray);
+.a-color {
+  &--charcoal {
+    @include color($brand-charcoal);
+  }
+  &--sky-blue {
+    @include color($brand-sky-blue);
+  }
+  &--ocean-blue {
+    @include color($brand-ocean-blue);
+  }
+  &--yellow {
+    @include color($brand-yellow);
+  }
+  &--red-orange {
+    @include color($brand-red-orange);
+  }
+  &--dark-blue {
+    @include color($brand-dark-blue);
+  }
+  &--light-gray {
+    @include color($brand-light-gray);
+  }
 }
