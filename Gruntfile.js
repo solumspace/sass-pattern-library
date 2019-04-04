@@ -8,18 +8,18 @@ module.exports = function(grunt) {
 		argv = require('minimist')(process.argv.slice(2));
 
 
-    // Load all Grunt tasks that are listed in package.json automagically
-    require('load-grunt-tasks')(grunt);
+	// Load all Grunt tasks that are listed in package.json automagically
+	require('load-grunt-tasks')(grunt);
 
 	var log = function(err, stdout, stderr, cb) {
-        if (stdout) {
-            grunt.log.writeln(stdout);
-        }
-        if (stderr) {
-            grunt.log.error(stderr);
-        }
-        cb();
-    };
+		if (stdout) {
+			grunt.log.writeln(stdout);
+		}
+		if (stderr) {
+			grunt.log.error(stderr);
+		}
+		cb();
+	};
 
 	/******************************************************
 	 * PATTERN LAB CONFIGURATION
@@ -133,16 +133,108 @@ module.exports = function(grunt) {
 						dest: path.resolve(paths().public.styleguide, 'css')
 					}
 				]
+			},
+			patterns: {
+				files: [
+					// Pattern_exports file copy to _includes
+					{
+						expand: true,
+						cwd: 'pattern_exports/',
+						src: ['**/*'],
+						dest: '../abrigo-patterns/_includes/patterns'
+					},
+						// Pattern_exports file copy to patterns
+					{
+						expand: true,
+						cwd: 'pattern_exports/',
+						src: ['**/*'],
+						dest: '../abrigo-patterns/patterns'
+					},
+					// Export public/patterns mustache files to _includes
+					{
+						expand: true,
+						cwd: 'public/patterns/',
+						src: ['**/*.mustache'],
+						dest: '../abrigo-patterns/_includes/patterns'
+					},
+					// Export public/patterns mustache files to patterns
+					{
+						expand: true,
+						cwd: 'public/patterns/',
+						src: ['**/*.mustache'],
+						dest: '../abrigo-patterns/patterns'
+					}
+				]
+			},
+			dist: {
+				files: [
+					// Export css directory to style guide css directory
+					{
+						expand: true,
+						cwd: '_sass/',
+						src: ['**/*'],
+						dest: '../abrigo-patterns/_sass'
+					},
+					// Export js directory to style guide js directory
+					{
+						expand: true,
+						flatten: true,
+						src: ['public/styleguide/js/patternlab-pattern.js'],
+						dest: '../abrigo-patterns/styleguide/js',
+						filter: 'isFile'
+					},
+					// Export images directory to style guide images directory
+					{
+						expand: true,
+						cwd: 'public/images/',
+						src: ['**/*'],
+						dest: '../abrigo-patterns/images'
+					},
+					// Export images directory to style guide images directory
+					{
+						expand: true,
+						cwd: 'public/js/',
+						src: ['**/*'],
+						dest: '../abrigo-patterns/js'
+					},
+					// Export icons to style guide root directory
+					{
+						expand: true,
+						flatten: true,
+						src: ['public/icons.svg'],
+						dest: '../abrigo-patterns',
+						filter: 'isFile'
+					}
+
+				],
 			}
 		},
+
+		/******************************************************
+		 * PROCESSHTML for export
+		 ******************************************************/
+		processhtml: {
+			dist: {
+				options: {
+					process: true
+				},
+				files: [{
+					expand: true,
+					cwd: 'public/patterns/',
+					src: ['**/*.html'],
+					dest: 'pattern_exports/'
+				}],
+			}
+		},
+
 		/******************************************************
 		 * SERVER AND WATCH TASKS
 		 ******************************************************/
 		watch: {
 			stylesheets: {
-                files: ['_sass/**/*.{scss,sass}'],
-                tasks: ['sass']
-            },
+				files: ['_sass/**/*.{scss,sass}'],
+				tasks: ['sass']
+			},
 			all: {
 				files: [
 					path.resolve(paths().source.css + '**/*.css'),
@@ -154,30 +246,34 @@ module.exports = function(grunt) {
 					path.resolve(paths().source.js + '/*.js'),
 					path.resolve(paths().source.root + '/*.ico')
 				],
-				tasks: ['default', 'bsReload:css']
+				tasks: ['default', 'bsReload:css', 'copy:dist']
+			},
+			patterns: {
+				files: 'public/patterns/**/*',
+				tasks: ['copy:patterns']
 			}
-        },
+		},
 
-        // sass (libsass) config
-        sass: {
-            options: {
-                implementation: sass,
-                sourceMap: true,
-                relativeAssets: false,
-                outputStyle: 'expanded',
-                sassDir: '_sass/',
-                cssDir: 'source/css'
-            },
-            build: {
-                files: [{
-                    expand: true,
-                    cwd: '_sass',
-                    src: ['**/*.{scss,sass}'],
-                    dest: 'source/css',
-                    ext: '.css'
-                }]
-            }
-        },
+		// sass (libsass) config
+		sass: {
+			options: {
+				implementation: sass,
+				sourceMap: true,
+				relativeAssets: false,
+				outputStyle: 'expanded',
+				sassDir: '_sass/',
+				cssDir: 'source/css'
+			},
+			build: {
+				files: [{
+					expand: true,
+					cwd: '_sass',
+					src: ['**/*.{scss,sass}'],
+					dest: 'source/css',
+					ext: '.css'
+				}]
+			}
+		},
 		browserSync: {
 			dev: {
 				options: {
@@ -227,8 +323,8 @@ module.exports = function(grunt) {
 	 * COMPOUND TASKS
 	 ******************************************************/
 
-	grunt.registerTask('default', ['patternlab', 'copy:main']);
-	grunt.registerTask('patternlab:build', ['patternlab', 'copy:main']);
+	grunt.registerTask('default', 'patternlab:deploy');
+	grunt.registerTask('patternlab:deploy', ['patternlab', 'copy']);
 	grunt.registerTask('patternlab:watch', ['patternlab', 'copy:main', 'watch']);
 	grunt.registerTask('patternlab:serve', ['sass', 'patternlab', 'copy:main', 'browserSync', 'watch']);
 

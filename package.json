@@ -1,45 +1,46 @@
 {
-  "name": "edition-node-grunt",
-  "description": "The grunt wrapper around patternlab-node core, providing tasks to interact with the core library and move supporting frontend assets.",
-  "version": "1.1.0",
-  "main": "./core/lib/patternlab.js",
-  "scripts": {
-    "pl:serve": "grunt patternlab:serve",
-    "postinstall": "node node_modules/patternlab-node/core/scripts/postinstall.js"
-  },
-  "dependencies": {
-    "minimist": "^1.2.0",
-    "patternlab-node": "^2.0.0",
-    "styleguidekit-assets-default": "^3.0.0",
-    "styleguidekit-mustache-default": "^3.0.0"
-  },
-  "keywords": [
-    "Pattern Lab",
-    "Atomic Web Design",
-    "Node",
-    "Grunt",
-    "Javascript",
-    "Angular"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/pattern-lab/edition-node-grunt.git"
-  },
-  "bugs": "https://github.com/pattern-lab/edition-node-grunt/issues",
-  "author": "Brian Muenzenmeyer",
-  "license": "MIT",
-  "engines": {
-    "node": ">=5.0"
-  },
-  "devDependencies": {
-    "bs-html-injector": "^3.0.0",
-    "grunt": "^1.0.3",
-    "grunt-sass": "^3.0.2",
-    "load-grunt-tasks": "^4.0.0",
-    "node-sass": "^4.11.0",
-    "time-grunt": "^2.0.0",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-contrib-copy": "^1.0.0"
-  }
+	"name": "edition-node-grunt",
+	"description": "The grunt wrapper around patternlab-node core, providing tasks to interact with the core library and move supporting frontend assets.",
+	"version": "1.1.0",
+	"main": "./core/lib/patternlab.js",
+	"scripts": {
+		"serve": "grunt patternlab:serve",
+		"deploy": "grunt",
+		"watch": "grunt patternlab:watch",
+		"postinstall": "node node_modules/patternlab-node/core/scripts/postinstall.js"
+	},
+	"dependencies": {
+		"minimist": "^1.2.0",
+		"patternlab-node": "^2.9.0",
+		"styleguidekit-assets-default": "^3.0.0",
+		"styleguidekit-mustache-default": "^3.0.0"
+	},
+	"keywords": [
+		"Pattern Lab",
+		"Atomic Web Design",
+		"Node",
+		"Grunt",
+		"Javascript",
+		"Angular"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/pattern-lab/edition-node-grunt.git"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": ">=5.0"
+	},
+	"devDependencies": {
+		"bs-html-injector": "^3.0.0",
+		"grunt": "^1.0.4",
+		"grunt-browser-sync": "^2.2.0",
+		"grunt-contrib-copy": "^1.0.0",
+		"grunt-contrib-watch": "^1.1.0",
+		"grunt-processhtml": "^0.4.2",
+		"grunt-sass": "^3.0.2",
+		"load-grunt-tasks": "^4.0.0",
+		"node-sass": "^4.11.0",
+		"time-grunt": "^2.0.0"
+	}
 }

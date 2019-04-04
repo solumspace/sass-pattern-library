@@ -200,6 +200,10 @@
   margin: 0 !important;
 }
 
+.sg-colors {
+  height: 400px;
+}
+
 .sg-colors li, .sg-logos li {
   -webkit-box-flex: 1;
   -ms-flex: auto;

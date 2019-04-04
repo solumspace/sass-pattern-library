@@ -30,6 +30,10 @@
   margin: 0 !important;
 }
 
+.sg-colors {
+	height: 400px;
+}
+
 .sg-colors, .sg-logos {
   @extend %sg-flex;
   li {
