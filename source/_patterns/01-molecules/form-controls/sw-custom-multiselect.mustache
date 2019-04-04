@@ -1,0 +1,40 @@
+<div class="custom-multiselect" data-ng-class="swCustomMultiSelect.optionClass">
+	<button type="button" class="multiselect" aria-haspopup="true" data-ng-click="swCustomMultiSelect.toggleDropdown()">
+		<span class="break-word">{{ swCustomMultiSelect.getSelectedOptions() }}</span>
+	</button>
+
+	<div class="dropdown" data-ng-if="swCustomMultiSelect.dropdownVisible">
+		<div class="header">
+			<ul class="ui-helper-reset ui-helper-clearfix">
+				<li data-ng-click="swCustomMultiSelect.selectAll()"><span class="ui-icon ui-icon-check"></span>Select all</li>
+				<li data-ng-click="swCustomMultiSelect.deselectAll()"><span class="ui-icon ui-icon-closethick"></span>Deselect all</li>
+				<li><div class="Button button-small close" data-ng-click="swCustomMultiSelect.toggleDropdown(false)">done</div></li>
+			</ul>
+
+			<input class="filter"
+				   type="text"
+				   placeholder="{{ swCustomMultiSelect.filterPlaceholder }}"
+				   data-ng-if="swCustomMultiSelect.filter"
+				   data-ng-model="swCustomMultiSelect.filterText"
+				   data-ng-model-options="{ debounce: 500 }"
+				   data-ng-change="swCustomMultiSelect.updateFilteredOptions()"
+				   data-ng-keypress="swCustomMultiSelect.keypressHandler($event)" />
+		</div>
+
+		<ul class="content" data-ng-class="{ filtering: swCustomMultiSelect.filtering }">
+			<i class="fa fa-spinner fa-pulse"></i>
+			<li class="empty" data-ng-if="swCustomMultiSelect.getFilteredOptions().length === 0">
+				No Result
+			</li>
+			<li data-ng-repeat="option in swCustomMultiSelect.getFilteredOptions()">
+				<label for="option-{{ $index }}-{{ option[swCustomMultiSelect.optionValue] }}" title="{{ option[swCustomMultiSelect.optionLabel] }}">
+					<input type="checkbox"
+						   id="option-{{ $index }}-{{ option[swCustomMultiSelect.optionValue] }}"
+						   data-ng-checked="swCustomMultiSelect.isSelected(option[swCustomMultiSelect.optionValue])"
+						   data-ng-click="swCustomMultiSelect.toggleSelection(option[swCustomMultiSelect.optionValue])"
+						   value="{{ option[swCustomMultiSelect.optionValue] }}" /> {{ option[swCustomMultiSelect.optionLabel] }}
+				</label>
+			</li>
+		</ul>
+	</div>
+</div>
