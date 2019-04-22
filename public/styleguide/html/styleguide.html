@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
 
-    <link rel="stylesheet" href="../../css/style.css?1554415233252" media="all" />
-    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1554415233252" media="all" />
+    <link rel="stylesheet" href="../../css/style.css?1554486926653" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1554486926653" media="all" />
 
 	<link rel="stylesheet" href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.1/angular-material.css"/>
 
@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="https://resources.sageworks.com/thirdparty/foobaz/jquery.foobaz.2.1.css" />
 	<link rel="stylesheet" href="https://resources.sageworks.com/thirdparty/addtocalendar/main.css" />
 	<link rel="stylesheet" href="https://resources.sageworks.com/thirdparty/highcharts/js/css/sageworks.css" />
-	<link rel="stylesheet" href="https://resources.sageworks.com/thirdparty/chosen/chosen.css" />
+	<link rel="stylesheet" href="https://resources.sageworks.com/thirdparty/chosen/chosen.css" /> 
 
 	<!-- build:remove:dist -->
     <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
@@ -34,8 +34,8 @@
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1554415233252" media="all">
-<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1554415233252" media="all" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1554486926653" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1554486926653" media="all" />
 
     <!-- End Pattern Lab -->
 	<!-- /build -->
@@ -224,45 +224,9 @@
     
   </div>
   <div class="sg-pattern-example">
-    <div class="custom-multiselect" data-ng-class="swCustomMultiSelect.optionClass">
-	<button type="button" class="multiselect" aria-haspopup="true" data-ng-click="swCustomMultiSelect.toggleDropdown()">
-		<span class="break-word"></span>
-	</button>
-
-	<div class="dropdown" data-ng-if="swCustomMultiSelect.dropdownVisible">
-		<div class="header">
-			<ul class="ui-helper-reset ui-helper-clearfix">
-				<li data-ng-click="swCustomMultiSelect.selectAll()"><span class="ui-icon ui-icon-check"></span>Select all</li>
-				<li data-ng-click="swCustomMultiSelect.deselectAll()"><span class="ui-icon ui-icon-closethick"></span>Deselect all</li>
-				<li><div class="Button button-small close" data-ng-click="swCustomMultiSelect.toggleDropdown(false)">done</div></li>
-			</ul>
-
-			<input class="filter"
-				   type="text"
-				   placeholder=""
-				   data-ng-if="swCustomMultiSelect.filter"
-				   data-ng-model="swCustomMultiSelect.filterText"
-				   data-ng-model-options="{ debounce: 500 }"
-				   data-ng-change="swCustomMultiSelect.updateFilteredOptions()"
-				   data-ng-keypress="swCustomMultiSelect.keypressHandler($event)" />
-		</div>
-
-		<ul class="content" data-ng-class="{ filtering: swCustomMultiSelect.filtering }">
-			<i class="fa fa-spinner fa-pulse"></i>
-			<li class="empty" data-ng-if="swCustomMultiSelect.getFilteredOptions().length === 0">
-				No Result
-			</li>
-			<li data-ng-repeat="option in swCustomMultiSelect.getFilteredOptions()">
-				<label for="option--" title="">
-					<input type="checkbox"
-						   id="option--"
-						   data-ng-checked="swCustomMultiSelect.isSelected(option[swCustomMultiSelect.optionValue])"
-						   data-ng-click="swCustomMultiSelect.toggleSelection(option[swCustomMultiSelect.optionValue])"
-						   value="" /> 
-				</label>
-			</li>
-		</ul>
-	</div>
+    
+<div data-ng-controller="FormControlsController as vm" data-ng-app="patterns">
+	<sw-custom-multi-select model="vm.options.value" options="vm.options" filter-placeholder="""></sw-custom-multi-select>
 </div>
 
   </div>
@@ -285,7 +249,7 @@
   </div>
   <div class="sg-pattern-example">
     
-<div data-ng-controller="FormControlsController as vm" data-ng-cloak=""data-ng-app="patterns" data-ng-app="patterns">
+<div data-ng-controller="FormControlsController as vm" data-ng-app="patterns">
   <input class="numeric-field" sw-numeric-input="" data-format="currency" data-ng-model="vm.value" />
 </div>
 
@@ -302,22 +266,22 @@
   </div><!--end sg-pattern-category-body-->
   
 </div><!--end sg-pattern-category-->
-<div id="organisms-tooltip" class="sg-pattern">
+<div id="organisms-material" class="sg-pattern">
   <div class="sg-pattern-head">
     <h3 class="sg-pattern-title">
-      <a href="../../patterns/02-organisms-angular-tooltip&#x2F;02-organisms-angular-tooltip.rendered.html" class="patternLink" data-patternpartial="organisms-tooltip" title="Link to Pattern">
-          Tooltip
+      <a href="../../patterns/02-organisms-angular-material&#x2F;02-organisms-angular-material.rendered.html" class="patternLink" data-patternpartial="organisms-material" title="Link to Pattern">
+          Material
       </a>
     </h3>
     <div class="sg-pattern-breadcrumb"></div>
-    <a href="#" data-patternpartial="organisms-tooltip" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-tooltip" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+    <a href="#" data-patternpartial="organisms-material" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-material" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
   </div>
-  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-tooltip">
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-material">
     
   </div>
   <div class="sg-pattern-example">
     
-<div data-ng-controller="TooltipController" ng-cloak="" class="tooltipdemoBasicUsage" data-ng-app="patterns">
+<div data-ng-controller="MaterialController" class="tooltipdemoBasicUsage" data-ng-app="patterns">
 
   <md-toolbar class="md-accent">
     <h2 class="md-toolbar-tools">
@@ -411,8 +375,31 @@ Use of this source code is governed by an MIT-style license that can be foundin 
 -->
 
   </div>
-  <script type="text/json" id="sg-pattern-data-organisms-tooltip" class="sg-pattern-data">
-    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"angular"},"patternExtension":"mustache","patternName":"Tooltip","patternPartial":"organisms-tooltip","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  <script type="text/json" id="sg-pattern-data-organisms-material" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"angular"},"patternExtension":"mustache","patternName":"Material","patternPartial":"organisms-material","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+  </script>
+</div><!--end .sg-pattern-->
+<div id="organisms-sw-grid-dashboard" class="sg-pattern">
+  <div class="sg-pattern-head">
+    <h3 class="sg-pattern-title">
+      <a href="../../patterns/02-organisms-angular-sw-grid-dashboard&#x2F;02-organisms-angular-sw-grid-dashboard.rendered.html" class="patternLink" data-patternpartial="organisms-sw-grid-dashboard" title="Link to Pattern">
+          Sw Grid Dashboard
+      </a>
+    </h3>
+    <div class="sg-pattern-breadcrumb"></div>
+    <a href="#" data-patternpartial="organisms-sw-grid-dashboard" title="View Pattern Info" id="sg-pattern-extra-toggle-organisms-sw-grid-dashboard" class="sg-pattern-extra-toggle"><span>&#9660;</span></a>
+  </div>
+  <div class="sg-pattern-extra" id="sg-pattern-extra-organisms-sw-grid-dashboard">
+    
+  </div>
+  <div class="sg-pattern-example">
+    <div data-ng-app="patterns" data-ng-controller="FormControlsController">
+	<sw-grid-dashboard></sw-grid-dashboard>
+</div>
+
+  </div>
+  <script type="text/json" id="sg-pattern-data-organisms-sw-grid-dashboard" class="sg-pattern-data">
+    {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"organisms","patternSubtype":"angular"},"patternExtension":"mustache","patternName":"Sw Grid Dashboard","patternPartial":"organisms-sw-grid-dashboard","patternState":"","patternEngineName":"mustache","extraOutput":{}}
   </script>
 </div><!--end .sg-pattern-->
   </div> <!--end #sg-patterns-->
@@ -457,10 +444,10 @@ Use of this source code is governed by an MIT-style license that can be foundin 
   }
 </script>
 
-<script id="pl-js-polyfill-insert-1554415233252">
+<script id="pl-js-polyfill-insert-1554486926653">
   (function() {
     if (self != top) {
-      var cb = '1554415233252';
+      var cb = '1554486926653';
       var js = [];
       if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
         js.push('styleguide/bower_components/classList.min.js');
@@ -470,10 +457,10 @@ Use of this source code is governed by an MIT-style license that can be foundin 
   })();
 </script>
 
-<script id="pl-js-insert-1554415233252">
+<script id="pl-js-insert-1554486926653">
   (function() {
     if (self != top) {
-      var cb = '1554415233252';
+      var cb = '1554486926653';
       var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
       scriptLoader.run(js,cb,'pl-js-insert');
     }
@@ -539,10 +526,9 @@ Use of this source code is governed by an MIT-style license that can be foundin 
 		<script src="https://resources.sageworks.com/compiled/analyst/swangular.min.js"></script>
 		<script src="https://sageworksanalyst.com/assets/js/jquery.swtable.js"></script>
 
-
 		<script src="../../js/angular.module.js"></script>
 		<script src="../../js/form-control.controller.js"></script>
-		<script src="../../js/tooltip.controller.js"></script>
+		<script src="../../js/material.controller.js"></script>
 	</body>
 
 </html>

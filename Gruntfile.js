@@ -214,16 +214,21 @@ module.exports = function(grunt) {
 		 * PROCESSHTML for export
 		 ******************************************************/
 		processhtml: {
+			options: {
+				process: true
+			},
 			dist: {
-				options: {
-					process: true
-				},
 				files: [{
 					expand: true,
 					cwd: 'public/patterns/',
 					src: ['**/*.html'],
 					dest: 'pattern_exports/'
-				}],
+				}]
+			},
+			style: {
+				files: {
+					'public/styleguide/html/styleguide.html': ['public/styleguide/html/styleguide.html']
+				}
 			}
 		},
 
@@ -325,7 +330,7 @@ module.exports = function(grunt) {
 	 ******************************************************/
 
 	grunt.registerTask('default', 'patternlab:deploy');
-	grunt.registerTask('patternlab:deploy', ['patternlab', 'copy']);
+	grunt.registerTask('patternlab:deploy', ['patternlab', 'copy:main', 'processhtml', 'copy:patterns', 'copy:dist']);
 	grunt.registerTask('patternlab:watch', ['patternlab', 'copy:main', 'watch']);
 	grunt.registerTask('patternlab:serve', ['sass', 'patternlab', 'copy:main', 'browserSync', 'watch']);
 

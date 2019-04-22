@@ -169,11 +169,23 @@
   max-height: 50px;
 }
 
+html {
+  font-size: 1em !important;
+}
+
+body {
+  padding-top: 0 !important;
+}
+
 #sg-patterns {
   -webkit-box-sizing: border-box !important;
   box-sizing: border-box !important;
   max-width: 100%;
   padding: 0 0.5em;
+}
+
+.sg-pattern {
+  min-height: 180px;
 }
 
 .demo-animate {
@@ -185,7 +197,8 @@
   cursor: pointer;
 }
 
-.sg-colors, .sg-logos {
+.sg-colors,
+.sg-logos {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -200,7 +213,8 @@
   margin: 0 !important;
 }
 
-.sg-colors li, .sg-logos li {
+.sg-colors li,
+.sg-logos li {
   -webkit-box-flex: 1;
   -ms-flex: auto;
   flex: auto;

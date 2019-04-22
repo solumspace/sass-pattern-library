@@ -1,9 +1,9 @@
 
 (function () {
     var app = angular.module('patterns');
-    app.controller('TooltipController', TooltipController);
-    TooltipController.$inject = ['$scope'];
-    function TooltipController($scope) {
+    app.controller('MaterialController', MaterialController);
+    MaterialController.$inject = ['$scope'];
+    function MaterialController($scope) {
         init();
         function init() {
 			$scope.demo = {
