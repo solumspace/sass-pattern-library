@@ -1,2 +1,2 @@
 # pattern-library
-pattern library for Abrigo
+pattern library built with GruntJs and Sass as a foundation.
